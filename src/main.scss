@@ -1,57 +1,75 @@
-@import url(fonts/Tahoma/styles.css);
+@import "fonts/Tahoma/styles.scss";
+@import "fonts/Calibri/stylesheet.scss";
 
 $main-color: #43b1d2;
 
 body {
-  background-color: white;
+    background-color: white;
+    font-family: Calibri;
 }
 
 .header {
-  background-color: $main-color;
+    background-color: $main-color;
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 118px;
+    }
 
-  .right {
-    width: 100%;
-  }
+    .right {
+        width: 100%;
+    }
 }
 
 .menu {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
-  &__item {
-    font-family: Calibri;
-    font-size: 24px;
-    list-style: none;
-    margin: 30px;
-     }
-  &__arrow {
-    width: 25px;
-    height: 25px;
-  }
+    &__item {
+        font-size: 20px;
+        list-style: none;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: #494848;
+        }
+    }
+
+    &__arrow {
+        width: 10px;
+        height: 10px;
+        fill: #494848;
+    }
 }
 
 
 .phone {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-  &__tel {
-    font-size: 20px;
-    font-family: Tahoma;
-    font-weight: bold;
+    &__tel {
+        font-size: 20px;
+        font-family: Tahoma;
+        font-weight: bold;
+        color: white;
 
-  }
+    }
 
-  &__img {
-    fill: white;
-    width: 25px;
-    height: 25px;
-  }
+    &__img {
+        width: 25px;
+        height: 25px;
+        fill: white;
+        margin-right: 10px;
+
+    }
+
+
 }

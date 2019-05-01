@@ -10,7 +10,6 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -18,17 +17,25 @@
         <a href="#"><img src="src/img/logo.png" alt="ЕДЦ"></a>
         <div class="right">
             <div class="phone">
-                <object class="phone__img" data="src/img/phone-square.svg" type="image/svg+xml">phone</object>
-                <span class="phone__tel">8000000000</span>
+                <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" class="phone__img">
+                    <path d="M1408 1193q0-11-2-16t-18-16.5-40.5-25-47.5-26.5-45.5-25-28.5-15q-5-3-19-13t-25-15-21-5q-15 0-36.5 20.5t-39.5 45-38.5 45-33.5 20.5q-7 0-16.5-3.5t-15.5-6.5-17-9.5-14-8.5q-99-55-170-126.5t-127-170.5q-2-3-8.5-14t-9.5-17-6.5-15.5-3.5-16.5q0-13 20.5-33.5t45-38.5 45-39.5 20.5-36.5q0-10-5-21t-15-25-13-19q-3-6-15-28.5t-25-45.5-26.5-47.5-25-40.5-16.5-18-16-2q-48 0-101 22-46 21-80 94.5t-34 130.5q0 16 2.5 34t5 30.5 9 33 10 29.5 12.5 33 11 30q60 164 216.5 320.5t320.5 216.5q6 2 30 11t33 12.5 29.5 10 33 9 30.5 5 34 2.5q57 0 130.5-34t94.5-80q22-53 22-101zm256-777v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z"/>
+                </svg>
+                <span class="phone__tel">80300 5000</span>
             </div>
+
             <ul class="menu">
-                <li class="menu__item">Главная</li>
-                <li class="menu__item">Услуги<object class="menu__arrow" data="src/img/arrow-down.svg" type="image/svg+xml"></object></li>
-                <li class="menu__item">Клиники и кабинеты</li>
-                <li class="menu__item">О нас</li>
-                <li class="menu__item">Статьи</li>
-                <li class="menu__item">Faq</li>
-                <li class="menu__item">Контакты</li>
+                <li class="menu__item"><a href="#">Главная</a></li>
+                <li class="menu__item"><a href="#">Услуги
+                    <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"
+                         class="menu__arrow">
+                        <path d="M1675 832q0 53-37 90l-651 652q-39 37-91 37-53 0-90-37l-651-652q-38-36-38-90 0-53 38-91l74-75q39-37 91-37 53 0 90 37l294 294v-704q0-52 38-90t90-38h128q52 0 90 38t38 90v704l294-294q37-37 90-37 52 0 91 37l75 75q37 39 37 91z"/>
+                    </svg>
+                </a></li>
+                <li class="menu__item"><a href="#">Клиники и кабинеты</a></li>
+                <li class="menu__item"><a href="#">О нас</a></li>
+                <li class="menu__item"><a href="#">Статьи</a></li>
+                <li class="menu__item"><a href="#">Faq</a></li>
+                <li class="menu__item"><a href="#">Контакты</a></li>
             </ul>
         </div>
 
