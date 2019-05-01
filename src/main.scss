@@ -1,0 +1,55 @@
+@import url(fonts/Tahoma/styles.css);
+
+$main-color: #43b1d2;
+
+body {
+  background-color: white;
+}
+
+.header {
+  background-color: $main-color;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  &__item {
+    font-family: Calibri;
+    font-size: 24px;
+     }
+  &__arrow {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+.phone {
+  display: flex;
+  justify-content: flex-end;
+
+  &__tel {
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: bold;
+
+  }
+
+  &__img {
+    fill: white;
+    width: 25px;
+    height: 25px;
+  }
+}
