@@ -1,75 +1,245 @@
 @import "fonts/Tahoma/styles.scss";
 @import "fonts/Calibri/stylesheet.scss";
 
-$main-color: #43b1d2;
-
+$header-color: #43b1d2;
+$main-color: #cbd3e6;
 body {
-    background-color: white;
-    font-family: Calibri;
+  background-color: white;
+  font-family: Calibri;
 }
 
 .header {
-    background-color: $main-color;
+  background-color: $header-color;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 118px;
-    }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 118px;
+  }
 
-    .right {
-        width: 100%;
-    }
+  .right {
+    width: 100%;
+  }
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 
-    &__item {
-        font-size: 20px;
-        list-style: none;
-        margin-right: 30px;
+  &__item {
+    font-size: 20px;
+    list-style: none;
+    margin-right: 30px;
 
-        &:last-child {
-            margin-right: 0;
-        }
-
-        a {
-            color: #494848;
-        }
+    &:last-child {
+      margin-right: 0;
     }
 
-    &__arrow {
-        width: 10px;
-        height: 10px;
-        fill: #494848;
+    a {
+      color: #494848;
     }
+  }
+
+  &__arrow {
+    width: 10px;
+    height: 10px;
+    fill: #494848;
+  }
 }
 
 
 .phone {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-    &__tel {
-        font-size: 20px;
-        font-family: Tahoma;
-        font-weight: bold;
-        color: white;
+  &__tel {
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: white;
 
-    }
+  }
 
-    &__img {
-        width: 25px;
-        height: 25px;
-        fill: white;
-        margin-right: 10px;
+  &__img {
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin-right: 10px;
 
-    }
+  }
+}
 
+.main {
+  display: flex;
+  background-color: $main-color;
+  min-height: 515px;
+}
+
+.main__container {
+  display: flex;
+  background-image: url("../src/img/Layer.png");
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  font-size: 20px;
+}
+
+.main__autoRedial1 {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  color: #494848;
+}
+.main__autoRedial2{
+  margin-top: 30px;
+  font-weight: bold;
+  color: #494848;
+}
+.main__autoRedial3{
+  margin-top: 50px;
+}
+
+.blocs__container {
+  background-color: #43b1d2;
+  display: flex;
+  text-align: center;
 
 }
+
+.blocs_1 {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 323px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocs__1 {
+  width: 25%;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 323px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #43b1d2;
+  margin-left: auto;
+
+}
+
+.blocs__2 {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 323px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #43b1d2;
+}
+
+.blocs__3 {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 323px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #43b1d2;
+
+}
+
+.blocs__4 {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 323px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #43b1d2;
+  margin-right: auto;
+}
+
+
+.blocs__1_1 {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 2px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: white;
+
+  img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.blocs__2_1 {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 2px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: white;
+
+  img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.blocs__3_1 {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 2px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: white;
+
+  img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.blocs__4_1 {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 2px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background: white;
+
+  img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
